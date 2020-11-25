@@ -8,8 +8,8 @@
 
 <script>
 export default {
-  created() {
-    this.$store.dispatch('containers/fetchRecycleContainers')
+  async created() {
+    this.$store.dispatch('containers/fetchRecycleProducts')
   }
 }
 </script>

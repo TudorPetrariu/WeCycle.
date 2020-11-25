@@ -2,7 +2,7 @@
   <div>
     <p>COntainers List</p>
     <SingleContainer
-      v-for="container in fetchContainers"
+      v-for="container in getAllProducts"
       :key="container._id"
       :id="container._id"
       :container="container"
@@ -17,8 +17,8 @@ export default {
     SingleContainer
   },
   computed: {
-    fetchContainers() {
-      return this.$store.getters['containers/getContainersList']
+    getAllProducts() {
+      return this.$store.getters['containers/getProductsList']
     }
   },
   head() {

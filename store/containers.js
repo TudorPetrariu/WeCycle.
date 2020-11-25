@@ -1,34 +1,37 @@
-
 import MockedData from '../assets/MockedData/response.json'
 
-// import axios from 'axios';
 export const state = () => ({
-  containersList: []
+  productsList: [],
+  currentProduct: []
 })
 
 const mutations = {
-  setContainersList:(state,payload)=>{
-  state.containersList = payload
-  console.log(payload);
+  setProductsList: (state, payload) => {
+    state.productsList = payload
+  },
+  saveProductDetails: (state, payload) => {
+    state.currentProduct = payload
   }
 }
 const getters = {
-  getContainersList :(state) =>{
-    return state.containersList
+  getProductsList: (state) => {
+    return state.productsList
+  },
+  getCurrentProduct: (state) => {
+    return state.currentProduct
   }
 }
 const actions = {
-  async fetchRecycleContainers({commit}) {
+  async fetchRecycleProducts({ commit }) {
     try {
       await new Promise(() => {
         setTimeout(() => {
-          commit('setContainersList', MockedData);
-        }, 500);
-      });
+          commit('setProductsList', MockedData)
+        }, 500)
+      })
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
-  },
-
+  }
 }
-export default { namespaced: true, state, actions, mutations,getters };
+export default { namespaced: true, state, actions, mutations, getters }
