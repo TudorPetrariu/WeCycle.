@@ -38,9 +38,11 @@
                 >{{ config.size }}</b-form-select-option
               >
             </b-form-select>
-            <b-card-text>
-              {{ item.unit_price_pickup }}
-            </b-card-text>
+            <AddToCartButton
+              :item="container"
+              :price="item.unit_price_pickup"
+            />
+            <b-card-text> Price {{ item.unit_price_pickup }} </b-card-text>
           </b-card-body>
         </b-col>
       </b-row>
@@ -49,13 +51,17 @@
 </template>
 
 <script>
+import AddToCartButton from './common/AddToCartButton'
 export default {
+  props: ['container', 'id'],
+  components: {
+    AddToCartButton
+  },
   data() {
     return {
       selectedSize: 'Current Product'
     }
   },
-  props: ['container', 'id'],
   methods: {
     seeCurrentProduct() {
       this.$store.commit('containers/saveProductDetails', this.container)
