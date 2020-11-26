@@ -1,1 +1,419 @@
-[{"sizes":[{"size":60,"container_product_id":null,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-Zak.png","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":3.5},{"size":240,"container_product_id":4,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-240.png","unit_price_purchase":null,"unit_price_rent":3.5,"unit_price_placement":50,"unit_price_pickup":23.5},{"size":660,"container_product_id":5,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-660.png","unit_price_purchase":null,"unit_price_rent":5.5,"unit_price_placement":50,"unit_price_pickup":28.5},{"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-1100.png","size":1100,"container_product_id":6,"unit_price_purchase":null,"unit_price_rent":6.5,"unit_price_placement":50,"unit_price_pickup":34}],"_id":"5f2292bf113931f95d96e58f","unit_weight":0,"_active":true,"stream_product_id":1,"type":"pmd","name":{"nl-nl":"PMD","en-gb":"PMD"},"description":{"nl-nl":"Plastic verpakkingen, blik en drinkpakken","en-gb":"Plastic, metal, drink cartons"},"_created":"2020-07-30T09:28:31.364Z","_modified":"2020-11-17T10:09:52.479Z"},{"sizes":[{"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PET-Zak.png","size":60,"container_product_id":null,"unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":3.5}],"_id":"5f2292bf7b7eee96203f20a4","unit_weight":0,"type":"pet","_active":true,"stream_product_id":2,"description":{"nl-nl":"Prijs per zak is inclusief levering, lediging en verwerking. Na bestelling ontvang je een rol met zakken. Wanneer je een zak wilt laten ophalen worden het aantal zakken geteld en betaal je per opgehaalde zak. De ophaling van de eerste zak heb je al betaalt door de bestelling van 1 zak via deze website.","en-gb":"plastic bottles and containers for packaging foods and beverages, personal care products, and many other consumer products"},"name":{"nl-nl":"PET","en-gb":"PET"},"_created":"2020-07-30T09:28:31.836Z","_modified":"2020-11-17T10:09:53.066Z"},{"sizes":[{"size":240,"container_product_id":4,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Restafval-240.png","unit_price_purchase":null,"unit_price_rent":3.5,"unit_price_placement":50,"unit_price_pickup":14.75},{"size":660,"container_product_id":5,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Restafval-660.png","unit_price_purchase":null,"unit_price_rent":5.5,"unit_price_placement":50,"unit_price_pickup":23.5},{"size":1100,"container_product_id":6,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Restafval-1100.png","unit_price_purchase":null,"unit_price_rent":6.5,"unit_price_placement":50,"unit_price_pickup":30}],"_id":"5f2292c054d95f65526c088a","type":"restafval","stream_product_id":3,"unit_weight":0,"_active":true,"description":{"en-gb":"Restafval","nl-nl":"Restafval"},"name":{"en-gb":"Restafval","nl-nl":"Restafval"},"_created":"2020-07-30T09:28:32.282Z","_modified":"2020-11-17T10:09:53.829Z"},{"sizes":[{"container_product_id":null,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-Bundle.png","size":30,"size_display":"800 x 600 x 800 mm","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":3.5},{"size":240,"container_product_id":4,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-240.png","unit_price_purchase":null,"unit_price_rent":3.5,"unit_price_placement":50,"unit_price_pickup":11.5},{"size":660,"container_product_id":5,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-660.png","unit_price_purchase":null,"unit_price_rent":5.5,"unit_price_placement":50,"unit_price_pickup":13},{"size":1100,"container_product_id":6,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-1100.png","unit_price_purchase":null,"unit_price_rent":6.5,"unit_price_placement":50,"unit_price_pickup":14},{"image":"","size":2400,"container_product_id":9,"unit_price_purchase":null,"unit_price_rent":10,"unit_price_placement":50,"unit_price_pickup":15.5}],"_id":"5f2292c0113931f95d96e63a","_active":true,"stream_product_id":4,"type":"papier-karton","unit_weight":0,"name":{"en-gb":"Paper / Carton","nl-nl":"Papier / Karton"},"description":{"nl-nl":"Papier / Karton","en-gb":"Papier / Karton"},"_created":"2020-07-30T09:28:32.716Z","_modified":"2020-11-17T10:09:54.216Z"},{"sizes":[{"size":240,"container_product_id":4,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Glas-240.png","unit_price_purchase":null,"unit_price_rent":3.5,"unit_price_placement":50,"unit_price_pickup":16}],"_id":"5f2292c1bc1b886556ecc43f","type":"glass","stream_product_id":5,"unit_weight":0,"_active":true,"description":{"en-gb":"Glass","nl-nl":"Glas"},"name":{"en-gb":"Glass","nl-nl":"Glas"},"_created":"2020-07-30T09:28:33.160Z","_modified":"2020-11-17T10:09:54.613Z"},{"sizes":[{"container_product_id":1,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Sinaasappelschil-Bucket.png","size":20,"unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":0,"unit_price_pickup":3.5}],"_id":"5f2292c1113931f95d96e6a6","stream_product_id":6,"type":"sinaasappelschillen","_active":true,"unit_weight":0,"name":{"en-gb":"Orange Peels","nl-nl":"Sinaasappelschillen"},"description":{"nl-nl":"Sinaasappelschillen","en-gb":"Orange Peels"},"_created":"2020-07-30T09:28:33.751Z","_modified":"2020-11-17T10:09:54.791Z"},{"sizes":[{"size":20,"container_product_id":1,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-KoffieDrab-Bucket.png","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":0,"unit_price_pickup":3.5}],"_id":"5f2292c1113931f95d96e6be","_active":true,"type":"koffiedrab","stream_product_id":7,"unit_weight":0,"description":{"nl-nl":"Koffiedrab","en-gb":"Coffee grids"},"name":{"en-gb":"Coffee","nl-nl":"Koffiedrab"},"_created":"2020-07-30T09:28:33.922Z","_modified":"2020-11-17T10:09:55.011Z"},{"sizes":[{"size":60,"container_product_id":null,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Blik-Zak.png","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":3.5}],"_id":"5f2292c2bc1b886556ecc489","stream_product_id":8,"_active":true,"type":"blik","unit_weight":0,"name":{"nl-nl":"Blik","en-gb":"Blik"},"description":{"en-gb":"Aluminium cans","nl-nl":"Blik"},"_created":"2020-07-30T09:28:34.088Z","_modified":"2020-11-17T10:09:55.186Z"},{"sizes":[{"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Etensresten-Zak.png","size":20,"container_product_id":null,"unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":3.5},{"size":120,"container_product_id":7,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Etensresten-240.png","unit_price_purchase":null,"unit_price_rent":0,"unit_price_placement":50,"unit_price_pickup":21}],"_id":"5f2292c27b7eee96203f21e0","type":"etensresten","_active":true,"unit_weight":0,"stream_product_id":9,"name":{"nl-nl":"Swill","en-gb":"Food Waste"},"description":{"nl-nl":"Etensresten (Swill)","en-gb":"Food Waste"},"_created":"2020-07-30T09:28:34.514Z","_modified":"2020-11-17T10:09:55.405Z"},{"sizes":[{"size":120,"container_product_id":null,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Brood-Zak.png","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":10}],"_id":"5f2292c254d95f65526c09de","type":"brood","stream_product_id":10,"_active":true,"unit_weight":0,"description":{"nl-nl":"Brood","en-gb":"Bread"},"name":{"en-gb":"Bread","nl-nl":"Brood"},"_created":"2020-07-30T09:28:34.681Z","_modified":"2020-11-17T10:09:55.980Z"},{"sizes":[{"size":400,"container_product_id":null,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Piepschuim.png","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":8.5},{"size":1000,"container_product_id":null,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Piepschuim.png","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":15}],"_id":"5f2292c254d95f65526c09fe","_active":true,"unit_weight":0,"stream_product_id":11,"type":"piepschuim","name":{"nl-nl":"Piepschuim","en-gb":"Styrofoam"},"description":{"nl-nl":"Piepschuim","en-gb":"Styrofoam"},"_created":"2020-07-30T09:28:34.876Z","_modified":"2020-11-17T10:09:56.218Z"},{"sizes":[{"size":10,"container_product_id":null,"image":"https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-EmptyPET-Bucket.png","unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":0.5}],"_id":"5f4f928adf91be4a6e860961","_active":true,"unit_weight":0,"type":"pet-emmers","stream_product_id":12,"description":{"en-gb":"Empty PET Buckets","nl-nl":"Lege PET emmers"},"name":{"nl-nl":"PET Saus Emmers","en-gb":"Empty PET buckets"},"_created":"2020-09-02T12:39:38.697Z","_modified":"2020-11-17T10:09:56.599Z"},{"sizes":[{"container_product_id":4,"image":"","size":240,"unit_price_purchase":null,"unit_price_rent":3.75,"unit_price_placement":50,"unit_price_pickup":17.5}],"_id":"5fac658846f78e45047e9a87","_active":true,"stream_product_id":13,"unit_weight":0,"type":"vetrouwelijk-papier","name":{"en-gb":"Confidential paper","nl-nl":"Vertrouwelijk papier"},"description":{"en-gb":"Confidential paper","nl-nl":"Vertrouwelijk papier"},"_created":"2020-11-11T22:28:24.777Z","_modified":"2020-11-17T10:09:56.774Z"},{"sizes":[{"image":"","size":80,"container_product_id":null,"unit_price_purchase":null,"unit_price_rent":null,"unit_price_placement":null,"unit_price_pickup":4.5}],"_id":"5fae9a91221b02f4d609cab7","_active":true,"type":"koffiebekers","stream_product_id":14,"unit_weight":0,"name":{"en-gb":"Coffee Cups","nl-nl":"Koffiebekers"},"description":{"en-gb":"Coffee Cups","nl-nl":"Koffiebekers"},"_created":"2020-11-13T14:39:13.113Z","_modified":"2020-11-17T10:09:56.985Z"}]
+[
+  {
+    "sizes": [
+      {
+        "size": 60,
+        "container_product_id": null,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-Zak.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 3.5
+      },
+      {
+        "size": 240,
+        "container_product_id": 4,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-240.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 3.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 23.5
+      },
+      {
+        "size": 660,
+        "container_product_id": 5,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-660.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 5.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 28.5
+      },
+      {
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PMD-1100.png",
+        "size": 1100,
+        "container_product_id": 6,
+        "unit_price_purchase": null,
+        "unit_price_rent": 6.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 34
+      }
+    ],
+    "_id": "5f2292bf113931f95d96e58f",
+    "unit_weight": 0,
+    "_active": true,
+    "stream_product_id": 1,
+    "type": "pmd",
+    "name": { "nl-nl": "PMD", "en-gb": "PMD" },
+    "description": {
+      "nl-nl": "Plastic verpakkingen, blik en drinkpakken",
+      "en-gb": "Plastic, metal, drink cartons"
+    },
+    "_created": "2020-07-30T09:28:31.364Z",
+    "_modified": "2020-11-17T10:09:52.479Z"
+  },
+  {
+    "sizes": [
+      {
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PET-Zak.png",
+        "size": 60,
+        "container_product_id": null,
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 3.5
+      }
+    ],
+    "_id": "5f2292bf7b7eee96203f20a4",
+    "unit_weight": 0,
+    "type": "pet",
+    "_active": true,
+    "stream_product_id": 2,
+    "description": {
+      "nl-nl": "Prijs per zak is inclusief levering, lediging en verwerking. Na bestelling ontvang je een rol met zakken. Wanneer je een zak wilt laten ophalen worden het aantal zakken geteld en betaal je per opgehaalde zak. De ophaling van de eerste zak heb je al betaalt door de bestelling van 1 zak via deze website.",
+      "en-gb": "plastic bottles and containers for packaging foods and beverages, personal care products, and many other consumer products"
+    },
+    "name": { "nl-nl": "PET", "en-gb": "PET" },
+    "_created": "2020-07-30T09:28:31.836Z",
+    "_modified": "2020-11-17T10:09:53.066Z"
+  },
+  {
+    "sizes": [
+      {
+        "size": 240,
+        "container_product_id": 4,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Restafval-240.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 3.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 14.75
+      },
+      {
+        "size": 660,
+        "container_product_id": 5,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Restafval-660.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 5.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 23.5
+      },
+      {
+        "size": 1100,
+        "container_product_id": 6,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Restafval-1100.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 6.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 30
+      }
+    ],
+    "_id": "5f2292c054d95f65526c088a",
+    "type": "restafval",
+    "stream_product_id": 3,
+    "unit_weight": 0,
+    "_active": true,
+    "description": { "en-gb": "Restafval", "nl-nl": "Restafval" },
+    "name": { "en-gb": "Restafval", "nl-nl": "Restafval" },
+    "_created": "2020-07-30T09:28:32.282Z",
+    "_modified": "2020-11-17T10:09:53.829Z"
+  },
+  {
+    "sizes": [
+      {
+        "container_product_id": null,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-Bundle.png",
+        "size": 30,
+        "size_display": "800 x 600 x 800 mm",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 3.5
+      },
+      {
+        "size": 240,
+        "container_product_id": 4,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-240.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 3.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 11.5
+      },
+      {
+        "size": 660,
+        "container_product_id": 5,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-660.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 5.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 13
+      },
+      {
+        "size": 1100,
+        "container_product_id": 6,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-PapierKarton-1100.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 6.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 14
+      },
+      {
+        "image": "",
+        "size": 2400,
+        "container_product_id": 9,
+        "unit_price_purchase": null,
+        "unit_price_rent": 10,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 15.5
+      }
+    ],
+    "_id": "5f2292c0113931f95d96e63a",
+    "_active": true,
+    "stream_product_id": 4,
+    "type": "papier-karton",
+    "unit_weight": 0,
+    "name": { "en-gb": "Paper / Carton", "nl-nl": "Papier / Karton" },
+    "description": { "nl-nl": "Papier / Karton", "en-gb": "Papier / Karton" },
+    "_created": "2020-07-30T09:28:32.716Z",
+    "_modified": "2020-11-17T10:09:54.216Z"
+  },
+  {
+    "sizes": [
+      {
+        "size": 240,
+        "container_product_id": 4,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Glas-240.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 3.5,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 16
+      }
+    ],
+    "_id": "5f2292c1bc1b886556ecc43f",
+    "type": "glass",
+    "stream_product_id": 5,
+    "unit_weight": 0,
+    "_active": true,
+    "description": { "en-gb": "Glass", "nl-nl": "Glas" },
+    "name": { "en-gb": "Glass", "nl-nl": "Glas" },
+    "_created": "2020-07-30T09:28:33.160Z",
+    "_modified": "2020-11-17T10:09:54.613Z"
+  },
+  {
+    "sizes": [
+      {
+        "container_product_id": 1,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Sinaasappelschil-Bucket.png",
+        "size": 20,
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": 0,
+        "unit_price_pickup": 3.5
+      }
+    ],
+    "_id": "5f2292c1113931f95d96e6a6",
+    "stream_product_id": 6,
+    "type": "sinaasappelschillen",
+    "_active": true,
+    "unit_weight": 0,
+    "name": { "en-gb": "Orange Peels", "nl-nl": "Sinaasappelschillen" },
+    "description": { "nl-nl": "Sinaasappelschillen", "en-gb": "Orange Peels" },
+    "_created": "2020-07-30T09:28:33.751Z",
+    "_modified": "2020-11-17T10:09:54.791Z"
+  },
+  {
+    "sizes": [
+      {
+        "size": 20,
+        "container_product_id": 1,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-KoffieDrab-Bucket.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": 0,
+        "unit_price_pickup": 3.5
+      }
+    ],
+    "_id": "5f2292c1113931f95d96e6be",
+    "_active": true,
+    "type": "koffiedrab",
+    "stream_product_id": 7,
+    "unit_weight": 0,
+    "description": { "nl-nl": "Koffiedrab", "en-gb": "Coffee grids" },
+    "name": { "en-gb": "Coffee", "nl-nl": "Koffiedrab" },
+    "_created": "2020-07-30T09:28:33.922Z",
+    "_modified": "2020-11-17T10:09:55.011Z"
+  },
+  {
+    "sizes": [
+      {
+        "size": 60,
+        "container_product_id": null,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Blik-Zak.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 3.5
+      }
+    ],
+    "_id": "5f2292c2bc1b886556ecc489",
+    "stream_product_id": 8,
+    "_active": true,
+    "type": "blik",
+    "unit_weight": 0,
+    "name": { "nl-nl": "Blik", "en-gb": "Blik" },
+    "description": { "en-gb": "Aluminium cans", "nl-nl": "Blik" },
+    "_created": "2020-07-30T09:28:34.088Z",
+    "_modified": "2020-11-17T10:09:55.186Z"
+  },
+  {
+    "sizes": [
+      {
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Etensresten-Zak.png",
+        "size": 20,
+        "container_product_id": null,
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 3.5
+      },
+      {
+        "size": 120,
+        "container_product_id": 7,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Etensresten-240.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": 0,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 21
+      }
+    ],
+    "_id": "5f2292c27b7eee96203f21e0",
+    "type": "etensresten",
+    "_active": true,
+    "unit_weight": 0,
+    "stream_product_id": 9,
+    "name": { "nl-nl": "Swill", "en-gb": "Food Waste" },
+    "description": { "nl-nl": "Etensresten (Swill)", "en-gb": "Food Waste" },
+    "_created": "2020-07-30T09:28:34.514Z",
+    "_modified": "2020-11-17T10:09:55.405Z"
+  },
+  {
+    "sizes": [
+      {
+        "size": 120,
+        "container_product_id": null,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Brood-Zak.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 10
+      }
+    ],
+    "_id": "5f2292c254d95f65526c09de",
+    "type": "brood",
+    "stream_product_id": 10,
+    "_active": true,
+    "unit_weight": 0,
+    "description": { "nl-nl": "Brood", "en-gb": "Bread" },
+    "name": { "en-gb": "Bread", "nl-nl": "Brood" },
+    "_created": "2020-07-30T09:28:34.681Z",
+    "_modified": "2020-11-17T10:09:55.980Z"
+  },
+  {
+    "sizes": [
+      {
+        "size": 400,
+        "container_product_id": null,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Piepschuim.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 8.5
+      },
+      {
+        "size": 1000,
+        "container_product_id": null,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-Piepschuim.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 15
+      }
+    ],
+    "_id": "5f2292c254d95f65526c09fe",
+    "_active": true,
+    "unit_weight": 0,
+    "stream_product_id": 11,
+    "type": "piepschuim",
+    "name": { "nl-nl": "Piepschuim", "en-gb": "Styrofoam" },
+    "description": { "nl-nl": "Piepschuim", "en-gb": "Styrofoam" },
+    "_created": "2020-07-30T09:28:34.876Z",
+    "_modified": "2020-11-17T10:09:56.218Z"
+  },
+  {
+    "sizes": [
+      {
+        "size": 10,
+        "container_product_id": null,
+        "image": "https://d39t4x71zbx2q8.cloudfront.net/streams/Seenons-EmptyPET-Bucket.png",
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 0.5
+      }
+    ],
+    "_id": "5f4f928adf91be4a6e860961",
+    "_active": true,
+    "unit_weight": 0,
+    "type": "pet-emmers",
+    "stream_product_id": 12,
+    "description": { "en-gb": "Empty PET Buckets", "nl-nl": "Lege PET emmers" },
+    "name": { "nl-nl": "PET Saus Emmers", "en-gb": "Empty PET buckets" },
+    "_created": "2020-09-02T12:39:38.697Z",
+    "_modified": "2020-11-17T10:09:56.599Z"
+  },
+  {
+    "sizes": [
+      {
+        "container_product_id": 4,
+        "image": "",
+        "size": 240,
+        "unit_price_purchase": null,
+        "unit_price_rent": 3.75,
+        "unit_price_placement": 50,
+        "unit_price_pickup": 17.5
+      }
+    ],
+    "_id": "5fac658846f78e45047e9a87",
+    "_active": true,
+    "stream_product_id": 13,
+    "unit_weight": 0,
+    "type": "vetrouwelijk-papier",
+    "name": { "en-gb": "Confidential paper", "nl-nl": "Vertrouwelijk papier" },
+    "description": {
+      "en-gb": "Confidential paper",
+      "nl-nl": "Vertrouwelijk papier"
+    },
+    "_created": "2020-11-11T22:28:24.777Z",
+    "_modified": "2020-11-17T10:09:56.774Z"
+  },
+  {
+    "sizes": [
+      {
+        "image": "",
+        "size": 80,
+        "container_product_id": null,
+        "unit_price_purchase": null,
+        "unit_price_rent": null,
+        "unit_price_placement": null,
+        "unit_price_pickup": 4.5
+      }
+    ],
+    "_id": "5fae9a91221b02f4d609cab7",
+    "_active": true,
+    "type": "koffiebekers",
+    "stream_product_id": 14,
+    "unit_weight": 0,
+    "name": { "en-gb": "Coffee Cups", "nl-nl": "Koffiebekers" },
+    "description": { "en-gb": "Coffee Cups", "nl-nl": "Koffiebekers" },
+    "_created": "2020-11-13T14:39:13.113Z",
+    "_modified": "2020-11-17T10:09:56.985Z"
+  }
+]

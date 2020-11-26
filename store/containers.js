@@ -32,6 +32,19 @@ const actions = {
     } catch (error) {
       console.log(error)
     }
+  },
+  filterListBySize({ commit, state }, payload) {
+    // const item = []
+    // return state.productsList.forEach((product) => {
+    //   return product.sizes.map((size) => {
+    //     item.push(size)
+    //     const filtered = item.filter((one) => {
+    //       return one.size === payload
+    //     })
+    //     // commit('setProductsList', filtered)
+    //     console.log(filtered)
+    //   })
+    // })
   }
 }
 export default { namespaced: true, state, actions, mutations, getters }
