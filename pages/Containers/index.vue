@@ -18,7 +18,7 @@
           >{{ config }}</b-form-select-option
         >
       </b-form-select>
-      <div class="mt-3">
+      <div class="mt-4">
         Selected: <strong>{{ selected }}</strong>
       </div>
     </div>
