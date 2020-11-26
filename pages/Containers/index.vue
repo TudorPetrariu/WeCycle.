@@ -2,18 +2,15 @@
   <div>
     <p>COntainers List</p>
     <div>
-      <b-form-select
-        @change="filterList(selected)"
-        v-model="selected"
-        class="mb-3"
-      >
+      <b-form-select v-model="selected" class="mb-3">
         <template>
           <b-form-select-option :value="null" disabled
             >-- Filter by size --</b-form-select-option
           >
         </template>
-        <b-form-select-option value="all">All</b-form-select-option>
-
+        <b-form-select-option value="All Products"
+          >All Products</b-form-select-option
+        >
         <b-form-select-option
           v-for="config in options"
           :value="config"
@@ -39,8 +36,8 @@ import SingleContainer from '../../components/SingleContainer'
 export default {
   data() {
     return {
-      selected: 'all',
-      options: [2400, 660, 20, 30, 1100, 80, 240]
+      selected: 'All Products',
+      options: []
     }
   },
   components: {
@@ -53,19 +50,28 @@ export default {
     filterProducts() {
       return this.getAllProducts.map((product) => {
         return product.sizes.filter((size) => {
-          return size.size === this.selected || this.selected === 'all'
+          return size.size === this.selected || this.selected === 'All Products'
         })
       })
     }
   },
   methods: {
-    filterList(selectedSize) {
-      console.log(selectedSize)
+    populateDropdownSelect() {
+      const allSizes = []
+      return this.getAllProducts.map((product) => {
+        product.sizes.filter((item) => {
+          allSizes.push(item.size)
+        })
+        this.options = [...new Set(allSizes)].sort((a, b) => a - b)
+      })
     }
+  },
+  mounted() {
+    this.populateDropdownSelect()
   },
   head() {
     return {
-      title: 'Explore tools',
+      title: 'Explore Products',
       meta: [
         {
           hid: 'description',
