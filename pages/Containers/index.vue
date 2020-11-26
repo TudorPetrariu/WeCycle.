@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>COntainers List</p>
+    <p>Products List</p>
     <div>
       <b-form-select v-model="selected" class="mb-3">
         <template>
@@ -48,10 +48,14 @@ export default {
       return this.$store.getters['containers/getProductsList']
     },
     filterProducts() {
-      return this.getAllProducts.map((product) => {
-        return product.sizes.filter((size) => {
-          return size.size === this.selected || this.selected === 'All Products'
+      if (this.selected === 'All Products') {
+        return this.getAllProducts
+      }
+      return this.getAllProducts.filter((product) => {
+        const filtered = product.sizes.filter((elem) => {
+          return elem.size === this.selected
         })
+        return filtered.length > 0
       })
     }
   },

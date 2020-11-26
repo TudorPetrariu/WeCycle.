@@ -1,6 +1,6 @@
 import MockedData from '../assets/MockedData/response.json'
 
-export const state = () => ({
+const state = () => ({
   productsList: [],
   currentProduct: []
 })
