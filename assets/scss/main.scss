@@ -1,1 +1,26 @@
-@import 'components';
+
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+@import 'variables.scss';
+
+.card {
+  border-radius: 40px;
+  box-shadow: 10px 5px 5px map_get($theme-colors, 'primary');;
+  img {
+    box-shadow: 8px 5px 4px map_get($theme-colors, 'primary');;
+    border: 2px solid map_get($theme-colors, 'primary');;
+  }
+  svg {
+    cursor: pointer;
+  }
+}
+
+.b-toast-append {
+  background-color:  map_get($theme-colors, 'primary');
+}
+.card-select{
+  width: 50%;
+  border-radius: 20px ;
+
+}

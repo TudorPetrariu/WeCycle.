@@ -15,7 +15,7 @@
           v-for="config in options"
           :value="config"
           :key="config"
-          >{{ config }}</b-form-select-option
+          >{{ config }} L</b-form-select-option
         >
       </b-form-select>
       <div class="mt-4">

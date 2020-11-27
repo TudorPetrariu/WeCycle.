@@ -10,6 +10,7 @@ const mutations = {
       ? state.cartItems.push({ name, description, sizes, id, quantity, price })
       : (record.quantity = quantity + record.quantity)
     state.totalCartPrice += quantity * price
+    console.log(state.totalCartPrice)
   }
 }
 
