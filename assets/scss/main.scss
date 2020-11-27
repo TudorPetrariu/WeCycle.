@@ -1,26 +1,45 @@
-
-
 @import '~bootstrap/scss/bootstrap.scss';
 
 @import 'variables.scss';
 
+body {
+  background: linear-gradient(to right, #eef0f1, #d9dee0);
+}
+
 .card {
   border-radius: 40px;
-  box-shadow: 10px 5px 5px map_get($theme-colors, 'primary');;
+  padding: 0.5em;
+  box-shadow: 0 0.6px 4px rgba(0, 0, 0, 0.16), 0 1.1px 9.6px rgba(0, 0, 0, 0.13),
+    0 1.6px 18.2px rgba(0, 0, 0, 0.11), 0 2.3px 32.4px rgba(0, 0, 0, 0.092),
+    0 3.3px 60.6px rgba(0, 0, 0, 0.073), 0 6px 145px rgba(0, 0, 0, 0.046);
+
   img {
-    box-shadow: 8px 5px 4px map_get($theme-colors, 'primary');;
-    border: 2px solid map_get($theme-colors, 'primary');;
+    box-shadow: 0 4px 10px 0 map_get($theme-colors, 'primary');
   }
   svg {
+    border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(105, 103, 103, 0.5),
+      0 -4px 10px 0 rgba(107, 103, 103, 0.5);
   }
 }
 
 .b-toast-append {
-  background-color:  map_get($theme-colors, 'primary');
+  background-color: map_get($theme-colors, 'primary');
 }
-.card-select{
-  width: 50%;
-  border-radius: 20px ;
+.card-select {
+  width: 20%;
+  border-radius: 10px;
+  border-color: map_get($theme-colors, 'primary');
+}
 
+.btn {
+  border-right-style: none;
+  border-left-style: none;
+  box-shadow: map_get($config, 'shadows');
+  &:hover {
+    background-color: map_get($theme-colors, 'secondary');
+    border-color: transparent;
+    transition: 0.3s all ease-in;
+  }
 }

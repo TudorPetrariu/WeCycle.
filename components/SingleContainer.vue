@@ -1,53 +1,68 @@
 <template>
   <b-container>
     <b-card
-      v-for="item in filterSelectedSize"
-      :key="item.size"
+      v-for="filteredProduct in filterSelectedSize"
+      :key="filteredProduct.size"
       @click="seeCurrentProduct"
       no-body
-      class="ss my-5"
+      class="ss my-5 d-flex justify-content-between"
       style="min-height: 300px; max-width: 700px"
     >
       <b-row no-gutters>
-        <b-col md="5" class="d-flex justify-content-center align-items-center">
+        <b-col
+          md="5"
+          class="d-flex justify-content-center align-filteredProducts-center"
+        >
           <b-card-img
             style="min-height: 250px; max-width: 220px"
             class="p-3 rounded-circle"
-            :src="item.image"
+            :src="filteredProduct.image"
             alt="container-Image"
           ></b-card-img>
         </b-col>
 
         <b-col md="7">
-          <b-card-body v-if="container.sizes">
-            <div class="d-flex justify-content-between align-items-center">
+          <b-card-body v-if="productDetails.sizes">
+            <div
+              class="d-flex justify-content-between align-filteredProducts-center"
+            >
               <div class="d-flex justify-content-between">
                 <h4>
-                  {{ container.name['en-gb'] }} Container
-                  <small>{{ item.size }} L</small>
+                  {{ productDetails.name['en-gb'] }} Container
+                  <small>{{ filteredProduct.size }} L</small>
                 </h4>
               </div>
               <b-icon-share variant="primary"></b-icon-share>
             </div>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <b-form-select class="card-select" v-model="selectedSize">
-                <b-form-select-option :value="selectedSize"
-                  >Choose Size</b-form-select-option
+            <b-card-text>
+              <div
+                class="d-flex justify-content-between align-filteredProducts-center"
+              >
+                <b-form-select
+                  :disabled="productDetails.sizes.length === 1"
+                  class="w-50"
+                  v-model="selectedSize"
                 >
-                <b-form-select-option
-                  v-for="config in container.sizes"
-                  :value="config.size"
-                  :key="config.size"
-                  >{{ config.size }}</b-form-select-option
-                >
-              </b-form-select>
-              <div>
-                <h5 class="text-muted">
-                  <strong> ${{ item.unit_price_pickup }} </strong>
-                </h5>
+                  <template #first>
+                    <b-form-select-option :value="selectedSize" disabled>{{
+                      selectedSize
+                    }}</b-form-select-option>
+                  </template>
+                  <b-form-select-option
+                    v-for="productSize in productDetails.sizes"
+                    :value="productSize.size"
+                    :key="productSize.size"
+                    v-show="productSize.size !== filteredProduct.size"
+                    >{{ productSize.size }} L</b-form-select-option
+                  >
+                </b-form-select>
+                <div>
+                  <h5 class="text-muted">
+                    <strong> ${{ filteredProduct.unit_price_pickup }} </strong>
+                  </h5>
+                </div>
               </div>
-            </div>
+            </b-card-text>
             <div>
               <hr />
 
@@ -58,19 +73,23 @@
               </nuxt-link> -->
               <li class="d-flex justify-content-between">
                 <span> Placement </span>
-                <strong>{{ item.unit_price_placement | replaceNull }}</strong>
+                <strong>{{
+                  filteredProduct.unit_price_placement | replaceNull
+                }}</strong>
               </li>
               <hr />
               <li class="d-flex justify-content-between m-0">
                 Rent
-                <strong>{{ item.unit_price_rent | replaceNull }}</strong>
+                <strong>{{
+                  filteredProduct.unit_price_rent | replaceNull
+                }}</strong>
               </li>
               <hr />
             </div>
             <div>
               <AddToCartButton
-                :item="container"
-                :price="item.unit_price_pickup"
+                :item="productDetails"
+                :price="filteredProduct.unit_price_pickup"
               />
             </div>
           </b-card-body>
@@ -83,26 +102,26 @@
 <script>
 import AddToCartButton from './common/AddToCartButton'
 export default {
-  props: ['container', 'id'],
+  props: ['productDetails', 'id'],
   components: {
     AddToCartButton
   },
   data() {
     return {
-      selectedSize: 'Current Product'
+      selectedSize: 'Size'
     }
   },
   methods: {
     seeCurrentProduct() {
-      this.$store.commit('containers/saveProductDetails', this.container)
+      this.$store.commit('containers/saveProductDetails', this.productDetails)
     }
   },
   computed: {
     filterSelectedSize() {
-      if (this.selectedSize === 'Current Product') {
-        return this.container.sizes.slice(0, 1)
+      if (this.selectedSize === 'Size') {
+        return this.productDetails.sizes.slice(0, 1)
       }
-      return this.container.sizes.filter((product) => {
+      return this.productDetails.sizes.filter((product) => {
         return product.size === this.selectedSize
       })
     }

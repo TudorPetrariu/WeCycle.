@@ -3,7 +3,7 @@
     {{ $route.params.id }}
     <hr />
     <div>
-      {{ currentProduct }}
+      {{ currentProduct._id }}
     </div>
   </div>
 </template>

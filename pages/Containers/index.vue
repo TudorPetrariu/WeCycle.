@@ -22,12 +22,14 @@
         Selected: <strong>{{ selected }}</strong>
       </div>
     </div>
-    <SingleContainer
-      v-for="container in filterProducts"
-      :key="container._id"
-      :id="container._id"
-      :container="container"
-    />
+    <main>
+      <SingleContainer
+        v-for="product in filteredProducts"
+        :key="product._id"
+        :id="product._id"
+        :productDetails="product"
+      />
+    </main>
   </div>
 </template>
 
@@ -47,7 +49,7 @@ export default {
     getAllProducts() {
       return this.$store.getters['containers/getProductsList']
     },
-    filterProducts() {
+    filteredProducts() {
       if (this.selected === 'All Products') {
         return this.getAllProducts
       }
@@ -61,12 +63,12 @@ export default {
   },
   methods: {
     populateDropdownSelect() {
-      const allSizes = []
-      return this.getAllProducts.map((product) => {
+      const filteredDropdown = []
+      return this.getAllProducts.filter((product) => {
         product.sizes.filter((item) => {
-          allSizes.push(item.size)
+          filteredDropdown.push(item.size)
         })
-        this.options = [...new Set(allSizes)].sort((a, b) => a - b)
+        this.options = [...new Set(filteredDropdown)].sort((a, b) => a - b)
       })
     }
   },
@@ -75,7 +77,7 @@ export default {
   },
   head() {
     return {
-      title: 'Explore Products',
+      title: 'Explore our products',
       meta: [
         {
           hid: 'description',

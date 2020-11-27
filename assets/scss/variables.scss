@@ -1,10 +1,8 @@
 $theme-colors: (
-    primary: rgb(5, 136, 136),
-    secondary: rgb(255, 123, 0),
-    success: rgb(192, 187, 187),
-    info: #FBC02D,
-    warning: #b64827,
-    danger: rgb(190, 137, 38),
-    light: #d17224,
-    dark: rgb(41, 38, 38)
+  primary: rgb(29, 151, 151),
+  secondary: rgb(255, 123, 0)
+);
+
+$config: (
+  shadows: 0 4px 4px 0 rgba(105, 103, 103, 0.5)
 );
