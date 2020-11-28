@@ -1,10 +1,7 @@
 <template>
-  <b-container
-    id="card_details_page"
-    class="d-flex justify-content-center align-items-center"
-  >
+  <b-container id="card_details_page">
     <div
-      class="details-card-item d-flex justify-content-center flex-column align-items-center"
+      class="details-card-item d-flex flex-md-row justify-content-center align-items-center"
     >
       <div class="details-card-img">
         <img :src="filterSelectedSize[0].image" alt="" />
@@ -19,6 +16,7 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
           animi nisi accusamus. Quibusdam sapiente quos non veritatis totam quo
           et, ab porro labore! Earum, libero blanditiis. Fuga facilis cum odio?
+          lorem20
         </p>
         <AddToCartButton
           :item="currentProduct"

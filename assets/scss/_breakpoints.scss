@@ -1,37 +1,37 @@
 @import 'variables.scss';
-
 @media screen and (max-width: 1068px) {
-  html {
-    font-size: 0.8rem;
-    // font-size: 12px;
-  }
-  // .details-card-item {
-  //   max-width: 80rem;
-  //   transition: 1.5s text ease-in-out;
-  // }
 }
 
-// @media screen and (max-width: 868px) {
-//   .details-card-item {
-//     max-width: 70rem;
-//   }
-// }
-
-// @media only screen and (min-width: 768px) {
-//   .details-card-img {
-//     height: 30rem;
-//   }
-// }
 @mixin tabletSize {
-  @media screen and (min-width: map_get($breakpoints, 'tablet')) {
-    // .details-card-item {
-    //   padding: 2.5rem;
-    //   // flex-direction: column;
-    //   .details-card-img {
-    //     min-width: 100%;
-    //     max-width: 100%;
-    //     transform: translate(0, -8rem);
-    //   }
-    // }
+  @media screen and (min-width: 768px) {
+    .details-card-item {
+      padding: 5rem;
+      .details-card-img {
+        min-width: 25rem;
+        max-width: 25rem;
+        height: 18rem;
+        transform: translate(-8rem, 0);
+      }
+      .details-card-info {
+        margin-top: 0;
+      }
+    }
+    .details-card-date span {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    .details-card-title {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .details-card-text {
+      font-size: 1.3rem;
+      color: rgba(0, 0, 0, 0.7);
+    }
+    .details-card-actions {
+      font-size: 1.6rem;
+    }
   }
 }

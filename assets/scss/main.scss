@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 15px;
+}
 body {
   background: linear-gradient(to right, #eef0f1, #d9dee0);
 }
@@ -52,29 +54,32 @@ body {
 }
 
 #card_details_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #eee;
   padding: 0 1.5rem;
 }
 
 .details-card-item {
   width: 100%;
-  padding: 5rem;
+  padding: 2rem;
   background-color: #fff;
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
   border-radius: 0.8rem;
+  flex-direction: column;
 
   .details-card-img {
     min-width: 20rem;
     max-width: 20rem;
     height: 17rem;
-    transform: translate(0, -8rem);
+    transform: translateY(-8rem);
 
     img {
       width: 100%;
       height: 100%;
-      // object-fit: cover;
       border-radius: 0.8rem;
       background: linear-gradient(
         to right,
@@ -86,31 +91,6 @@ body {
   .details-card-info {
     margin-top: -5rem;
   }
-  // .details-card-date span {
-  //   color: rgba(0, 0, 0, 0.5);
-  //   font-size: 1.6rem;
-  //   font-weight: 600;
-  //   margin: 0.5rem 0;
-  // }
-  // .details-card-title {
-  //   text-transform: uppercase;
-  //   font-size: 2.5rem;
-  //   margin: 1.5rem 0 2rem;
-  //   color: #4facfe;
-  // }
-  // .details-card-text {
-  //   margin-bottom: 3rem;
-  //   font-size: 1.4rem;
-  //   color: rgba(0, 0, 0, 0.7);
-  // }
-  // .details-card-actions {
-  //   letter-spacing: 1px;
-  //   font-size: 1.2em;
-  //   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  //   &:hover {
-  //     background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
-  //   }
-  // }
 }
 
 @import 'breakpoints';
