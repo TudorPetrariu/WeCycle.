@@ -3,7 +3,9 @@
     id="card_details_page"
     class="d-flex justify-content-center align-items-center"
   >
-    <div class="details-card-item d-flex align-items-center">
+    <div
+      class="details-card-item d-flex justify-content-center flex-column align-items-center"
+    >
       <div class="details-card-img">
         <img :src="filterSelectedSize[0].image" alt="" />
       </div>

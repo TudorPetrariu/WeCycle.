@@ -53,73 +53,64 @@ body {
 
 #card_details_page {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #eee;
   padding: 0 1.5rem;
 }
 
 .details-card-item {
   width: 100%;
-  max-width: 98rem;
   padding: 5rem;
   background-color: #fff;
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
   border-radius: 0.8rem;
 
   .details-card-img {
-    min-width: 35rem;
-    max-width: 35rem;
-    height: 30rem;
-    transform: translateX(-8rem);
-    position: relative;
-    &::before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: linear-gradient(
-        to right,
-        rgba(79, 172, 254, 0.8),
-        rgba(0, 242, 254, 0.8)
-      );
-      box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.3);
-      border-radius: 0.8rem;
-    }
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 17rem;
+    transform: translate(0, -8rem);
+
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      display: block;
+      // object-fit: cover;
       border-radius: 0.8rem;
+      background: linear-gradient(
+        to right,
+        rgba(69, 87, 104, 0.973),
+        rgba(26, 50, 51, 0.979)
+      );
     }
   }
-  .details-card-date span {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 0.5rem 0;
+  .details-card-info {
+    margin-top: -5rem;
   }
-  .details-card-title {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem;
-    color: #4facfe;
-  }
-  .details-card-text {
-    margin-bottom: 3rem;
-    font-size: 1.4rem;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .details-card-actions {
-    letter-spacing: 1px;
-    font-size: 1.2em;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    &:hover {
-      background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
-    }
-  }
+  // .details-card-date span {
+  //   color: rgba(0, 0, 0, 0.5);
+  //   font-size: 1.6rem;
+  //   font-weight: 600;
+  //   margin: 0.5rem 0;
+  // }
+  // .details-card-title {
+  //   text-transform: uppercase;
+  //   font-size: 2.5rem;
+  //   margin: 1.5rem 0 2rem;
+  //   color: #4facfe;
+  // }
+  // .details-card-text {
+  //   margin-bottom: 3rem;
+  //   font-size: 1.4rem;
+  //   color: rgba(0, 0, 0, 0.7);
+  // }
+  // .details-card-actions {
+  //   letter-spacing: 1px;
+  //   font-size: 1.2em;
+  //   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  //   &:hover {
+  //     background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+  //   }
+  // }
 }
 
 @import 'breakpoints';
