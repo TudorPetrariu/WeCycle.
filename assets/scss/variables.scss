@@ -6,3 +6,7 @@ $theme-colors: (
 $config: (
   shadows: 0 4px 4px 0 rgba(105, 103, 103, 0.5)
 );
+$breakpoints: (
+  phone: 576,
+  tablet: 768px
+);

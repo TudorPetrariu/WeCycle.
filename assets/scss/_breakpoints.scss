@@ -1,0 +1,47 @@
+@import 'variables.scss';
+
+@media screen and (max-width: map_get($config, 'tablet')) {
+  .details-card-item {
+    padding: 2.5rem;
+    flex-direction: column;
+    .details-card-img {
+      min-width: 100%;
+      max-width: 100%;
+      transform: translate(0, -8rem);
+    }
+  }
+}
+@media screen and (max-width: 1068px) {
+  html {
+    font-size: 0.8rem;
+    // font-size: 12px;
+  }
+  .details-card-item {
+    max-width: 80rem;
+    transition: 1.5s text ease-in-out;
+    .details-card-img {
+      min-width: 30rem;
+      max-width: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .details-card-item {
+    max-width: 70rem;
+  }
+}
+
+@mixin tabletSize {
+  @media screen and (max-width: map_get($breakpoints, 'tablet')) {
+    .details-card-item {
+      padding: 2.5rem;
+      flex-direction: column;
+      .details-card-img {
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem);
+      }
+    }
+  }
+}
