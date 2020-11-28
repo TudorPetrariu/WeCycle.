@@ -48,15 +48,6 @@ export default {
         price: this.price
       }
       this.$store.commit('cart/setProductToCart', order)
-      this.$bvToast.toast(
-        `Added ${this.item.name['en-gb']} Container to Cart`,
-        {
-          title: 'All set !',
-          toaster: 'b-toaster-bottom-right',
-          appendToast: true,
-          autoHideDelay: 500
-        }
-      )
     }
   }
 }

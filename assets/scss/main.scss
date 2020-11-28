@@ -2,6 +2,16 @@
 
 @import 'variables.scss';
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
 body {
   background: linear-gradient(to right, #eef0f1, #d9dee0);
 }
@@ -41,5 +51,10 @@ body {
     background-color: map_get($theme-colors, 'secondary');
     border-color: transparent;
     transition: 0.3s all ease-in;
+  }
+}
+.details-card-item {
+  img {
+    height: 100%;
   }
 }

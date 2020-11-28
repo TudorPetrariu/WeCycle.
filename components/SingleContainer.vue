@@ -1,43 +1,34 @@
 <template>
   <b-container>
     <b-card
-      v-for="filteredProduct in filterSelectedSize"
-      :key="filteredProduct.size"
       @click="seeCurrentProduct"
       no-body
       class="ss my-5 d-flex justify-content-between"
       style="min-height: 300px; max-width: 700px"
     >
       <b-row no-gutters>
-        <b-col
-          md="5"
-          class="d-flex justify-content-center align-filteredProducts-center"
-        >
+        <b-col md="5" class="d-flex justify-content-center align-items-center">
           <b-card-img
             style="min-height: 250px; max-width: 220px"
             class="p-3 rounded-circle"
-            :src="filteredProduct.image"
+            :src="filterSelectedSize[0].image"
             alt="container-Image"
           ></b-card-img>
         </b-col>
 
         <b-col md="7">
           <b-card-body v-if="productDetails.sizes">
-            <div
-              class="d-flex justify-content-between align-filteredProducts-center"
-            >
+            <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex justify-content-between">
                 <h4>
                   {{ productDetails.name['en-gb'] }} Container
-                  <small>{{ filteredProduct.size }} L</small>
+                  <small>{{ filterSelectedSize[0].size }} L</small>
                 </h4>
               </div>
               <b-icon-share variant="primary"></b-icon-share>
             </div>
             <b-card-text>
-              <div
-                class="d-flex justify-content-between align-filteredProducts-center"
-              >
+              <div class="d-flex justify-content-between align-items-center">
                 <b-form-select
                   :disabled="productDetails.sizes.length === 1"
                   class="w-50"
@@ -52,13 +43,15 @@
                     v-for="productSize in productDetails.sizes"
                     :value="productSize.size"
                     :key="productSize.size"
-                    v-show="productSize.size !== filteredProduct.size"
+                    v-show="productSize.size !== filterSelectedSize[0].size"
                     >{{ productSize.size }} L</b-form-select-option
                   >
                 </b-form-select>
                 <div>
                   <h5 class="text-muted">
-                    <strong> ${{ filteredProduct.unit_price_pickup }} </strong>
+                    <strong>
+                      ${{ filterSelectedSize[0].unit_price_pickup }}
+                    </strong>
                   </h5>
                 </div>
               </div>
@@ -74,14 +67,14 @@
               <li class="d-flex justify-content-between">
                 <span> Placement </span>
                 <strong>{{
-                  filteredProduct.unit_price_placement | replaceNull
+                  filterSelectedSize[0].unit_price_placement | replaceNull
                 }}</strong>
               </li>
               <hr />
               <li class="d-flex justify-content-between m-0">
                 Rent
                 <strong>{{
-                  filteredProduct.unit_price_rent | replaceNull
+                  filterSelectedSize[0].unit_price_rent | replaceNull
                 }}</strong>
               </li>
               <hr />
@@ -89,7 +82,7 @@
             <div>
               <AddToCartButton
                 :item="productDetails"
-                :price="filteredProduct.unit_price_pickup"
+                :price="filterSelectedSize[0].unit_price_pickup"
               />
             </div>
           </b-card-body>
@@ -119,7 +112,7 @@ export default {
   computed: {
     filterSelectedSize() {
       if (this.selectedSize === 'Size') {
-        return this.productDetails.sizes.slice(0, 1)
+        return this.productDetails.sizes
       }
       return this.productDetails.sizes.filter((product) => {
         return product.size === this.selectedSize
