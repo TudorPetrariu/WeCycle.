@@ -1,4 +1,5 @@
-@import 'variables.scss';
+@import 'variables';
+@import 'navbar';
 @import '~bootstrap/scss/bootstrap.scss';
 
 *,
@@ -52,6 +53,15 @@ body {
   box-shadow: map_get($config, 'shadows');
 }
 .add-multiple-to-cart-btn {
+  .add-to-cart-button {
+    min-width: 9rem;
+    max-width: 9rem;
+  }
+  span {
+    text-align: center;
+    min-width: 1.2rem;
+    max-width: 1.2rem;
+  }
 }
 .details-card-item {
   width: 100vw;

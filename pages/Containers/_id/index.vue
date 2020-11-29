@@ -15,6 +15,7 @@
         >
           <span>{{ currentProduct.name['en-gb'] }} </span>
           <b-form-select
+            :disabled="currentProduct.sizes.length === 1"
             class="details-card-actions w-50 single-product-dropdown"
             v-model="selectedSize"
           >
@@ -36,9 +37,9 @@
           $ {{ filterSelectedSize[0].unit_price_pickup }}
         </h1>
         <ul class="details-card-text">
-          <spa>
+          <li>
             {{ currentProduct.description['en-gb'] }}
-          </spa>
+          </li>
 
           <li class="d-flex justify-content-between">
             <span> Placement </span>
