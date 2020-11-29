@@ -1,6 +1,6 @@
 <template>
   <b-container
-    id="card_details_page "
+    id="card_details_page"
     class="d-flex justify-content-center align-items-center"
   >
     <div
