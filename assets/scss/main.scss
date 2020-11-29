@@ -43,14 +43,12 @@ body {
 }
 
 .btn {
-  border-right-style: none;
-  border-left-style: none;
-  box-shadow: map_get($config, 'shadows');
+  border-style: none;
+  background-image: linear-gradient(to right, #2d5c5e 0%, #307f83 100%);
   &:hover {
-    background-color: map_get($theme-colors, 'secondary');
-    border-color: transparent;
-    transition: 0.3s all ease-in;
+    background-image: linear-gradient(to right, #307f83 0%, #2d5c5e 100%);
   }
+  box-shadow: map_get($config, 'shadows');
 }
 
 #card_details_page {
@@ -58,7 +56,6 @@ body {
 }
 
 .details-card-item {
-  // width: 80vw;
   margin-top: 3rem;
   padding: 2rem;
   background-color: #fff;
@@ -74,11 +71,7 @@ body {
       width: 100%;
       height: 100%;
       border-radius: 0.8rem;
-      background: linear-gradient(
-        to right,
-        rgba(69, 87, 104, 0.973),
-        rgba(26, 50, 51, 0.979)
-      );
+      background-image: linear-gradient(to right, #2d5c5e 0%, #307f83 100%);
     }
   }
   .details-card-info {
