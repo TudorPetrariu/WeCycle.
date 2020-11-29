@@ -4,13 +4,24 @@ export const state = () => ({
 })
 
 const mutations = {
-  setProductToCart(state, { name, description, sizes, id, quantity, price }) {
+  setProductToCart(
+    state,
+    { name, description, itemSize, id, quantity, price }
+  ) {
     const record = state.cartItems.find((element) => element.id === id)
     !record
-      ? state.cartItems.push({ name, description, sizes, id, quantity, price })
+      ? state.cartItems.push({
+          name,
+          description,
+          itemSize,
+          id,
+          quantity,
+          price
+        })
       : (record.quantity = quantity + record.quantity)
     state.totalCartPrice += quantity * price
-    console.log(state.totalCartPrice)
+    console.log(state.cartItems)
+    console.log(itemSize)
   }
 }
 

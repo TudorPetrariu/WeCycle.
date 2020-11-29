@@ -1,26 +1,32 @@
 <template>
-  <div class="d-flex justify-content-between align-items-center">
+  <div
+    class="d-flex justify-content-between align-items-center add-multiple-to-cart-btn"
+  >
+    <b-button class="px-2 py-2" size="sm" @click="addItemToCart">
+      Add {{ quantity === 0 ? '1' : quantity }} for ${{
+        cartItemsPrice === 0 ? this.price : cartItemsPrice
+      }}
+    </b-button>
     <div class="d-flex align-items-center">
-      <b-button size="sm" :disabled="quantity === 0" @click="quantity--">
+      <b-button
+        :disabled="quantity === 1"
+        @click="getCartCurrentPrice('substraction')"
+      >
         -
       </b-button>
-      <span class="p-5">{{ quantity }}</span>
-
-      <b-button size="sm" @click="quantity++"> + </b-button>
+      <span class="mx-3 py-1">{{ itemSize }} </span>
+      <b-button @click="getCartCurrentPrice('addition')" class=""> + </b-button>
     </div>
-
-    <b-button size="sm" class="add-to-cart-button" @click="addItemToCart">
-      Add 1 for ${{ price }}
-    </b-button>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['item', 'price'],
+  props: ['itemSize', 'item', 'price'],
   data() {
     return {
-      quantity: 1
+      quantity: 1,
+      cartItemsPrice: 0
     }
   },
   methods: {
@@ -28,12 +34,17 @@ export default {
       const order = {
         name: this.item.name,
         description: this.item.description,
-        sizes: this.item.sizes,
+        itemSize: this.itemSize,
         id: this.item.stream_product_id,
         quantity: this.quantity || 1,
         price: this.price
       }
+
       this.$store.commit('cart/setProductToCart', order)
+    },
+    getCartCurrentPrice(para) {
+      para === 'addition' ? this.quantity++ : this.quantity--
+      this.cartItemsPrice = this.quantity * this.price
     }
   }
 }

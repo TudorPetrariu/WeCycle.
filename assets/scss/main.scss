@@ -43,16 +43,19 @@ body {
 }
 
 .btn {
+  // padding: 0.7rem;
   border-style: none;
-  background-image: linear-gradient(to right, #2d5c5e 0%, #307f83 100%);
+  background-image: linear-gradient(to right, #396d6e 0%, #0b8d94 100%);
   &:hover {
-    background-image: linear-gradient(to right, #307f83 0%, #2d5c5e 100%);
+    background-image: linear-gradient(to right, #0b8d94 0%, #396d6e 100%);
   }
   box-shadow: map_get($config, 'shadows');
 }
-
+.add-multiple-to-cart-btn {
+}
 .details-card-item {
-  width: 100%;
+  width: 100vw;
+  max-width: 98w;
   margin-top: 4rem;
   padding: 2rem;
   background-color: #fff;
@@ -81,4 +84,3 @@ body {
 @include sizeS;
 @include sizeM;
 @include sizeL;
-// @include sizeXl

@@ -3,7 +3,7 @@
     <b-card
       @click="seeCurrentProduct"
       no-body
-      class="ss my-5 d-flex justify-content-between"
+      class="my-5 d-flex justify-content-between"
       style="min-height: 300px; max-width: 700px"
     >
       <b-row no-gutters>
@@ -22,16 +22,26 @@
               <div class="d-flex justify-content-between">
                 <h4>
                   {{ productDetails.name['en-gb'] }} Container
-                  <small>{{ filterSelectedSize[0].size }} L</small>
+                  <small>{{ filterSelectedSize[0].itemSize }} L</small>
                 </h4>
               </div>
-              <b-icon-share variant="primary"></b-icon-share>
+              <b-button
+                v-if="$route.name !== 'containers'"
+                variant="secondary"
+                class="d-flex align-items-center info-button rounded-circle"
+                v-b-tooltip.hover
+                title="View more details"
+                size="sm"
+                :to="'containers/' + id"
+              >
+                <b-icon-info-circle scale="2">Details</b-icon-info-circle>
+              </b-button>
             </div>
             <b-card-text>
               <div class="d-flex justify-content-between align-items-center">
                 <b-form-select
                   :disabled="productDetails.sizes.length === 1"
-                  class="w-50"
+                  class="w-25"
                   v-model="selectedSize"
                 >
                   <template #first>
@@ -79,24 +89,16 @@
               </li>
               <hr />
             </div>
-            <div class="d-flex justify-content-between align-items-center">
+            <div>
               <AddToCartButton
                 :item="productDetails"
                 :price="filterSelectedSize[0].unit_price_pickup"
+                :itemSize="
+                  selectedSize === 'Size'
+                    ? filterSelectedSize[0].size
+                    : selectedSize
+                "
               />
-              <b-button
-                v-if="$route.name !== 'containers'"
-                variant="outline-primary"
-                class="d-flex align-items-center info-button"
-                v-b-tooltip.hover
-                title="View more details"
-                size="sm"
-                :to="'containers/' + id"
-              >
-                <b-icon-info-square-fill scale="2"
-                  >Details</b-icon-info-square-fill
-                >
-              </b-button>
             </div>
           </b-card-body>
         </b-col>
