@@ -1,32 +1,22 @@
 <template>
-  <div class="d-flex justify-content-between">
-    <div class="d-flex align-items-center">
-      <b-button
-        variant="outline-primary"
-        :disabled="quantity === 0"
-        @click="quantity--"
-      >
-        -
-      </b-button>
-      <span class="mx-2">{{ quantity }}</span>
+  <b-row>
+    <b-col sm="12">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <b-button size="sm" :disabled="quantity === 0" @click="quantity--">
+            -
+          </b-button>
+          <span class="p-5">{{ quantity }}</span>
 
-      <b-button variant="outline-primary" @click="quantity++"> + </b-button>
-    </div>
+          <b-button size="sm" @click="quantity++"> + </b-button>
+        </div>
 
-    <b-button size="sm" variant="outline-primary" @click="addItemToCart">
-      Add 1 for ${{ price }}
-    </b-button>
-    <b-button
-      variant="outline-primary"
-      class="d-flex align-items-center details-button"
-      v-b-tooltip.hover
-      title="View more details"
-      size="sm"
-      :to="'containers/' + item.type"
-    >
-      <b-icon-info-square-fill scale="2">Details</b-icon-info-square-fill>
-    </b-button>
-  </div>
+        <b-button size="sm" class="add-to-cart-button" @click="addItemToCart">
+          Add 1 for ${{ price }}
+        </b-button>
+      </div>
+    </b-col>
+  </b-row>
 </template>
 
 <script>

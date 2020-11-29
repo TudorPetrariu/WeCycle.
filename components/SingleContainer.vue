@@ -79,11 +79,24 @@
               </li>
               <hr />
             </div>
-            <div>
+            <div class="d-flex justify-content-between align-items-center">
               <AddToCartButton
                 :item="productDetails"
                 :price="filterSelectedSize[0].unit_price_pickup"
               />
+              <b-button
+                v-if="$route.name !== 'containers'"
+                variant="outline-primary"
+                class="d-flex align-items-center info-button"
+                v-b-tooltip.hover
+                title="View more details"
+                size="sm"
+                :to="'containers/' + id"
+              >
+                <b-icon-info-square-fill scale="2"
+                  >Details</b-icon-info-square-fill
+                >
+              </b-button>
             </div>
           </b-card-body>
         </b-col>

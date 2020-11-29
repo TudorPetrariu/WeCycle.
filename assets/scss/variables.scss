@@ -1,12 +1,8 @@
 $theme-colors: (
-  primary: rgb(29, 151, 151),
-  secondary: rgb(255, 123, 0)
+  primary: #1d9797,
+  secondary: #ff7b00
 );
 
 $config: (
   shadows: 0 4px 4px 0 rgba(105, 103, 103, 0.5)
-);
-$breakpoints: (
-  phone: 576,
-  tablet: 768px
 );
