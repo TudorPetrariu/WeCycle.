@@ -1,9 +1,5 @@
 @mixin sizeS {
   @media screen and (min-width: 480px) {
-    .singleProduct {
-      grid-template-columns: repeat(1, 1fr);
-      grid-column-gap: 5rem;
-    }
     .card {
       .card-img {
         min-width: 20rem;
