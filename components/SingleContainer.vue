@@ -25,12 +25,12 @@
                 </h4>
               </div>
               <b-button
-                v-if="$route.name !== 'containers'"
+                v-if="$route.name !== 'ourProducts'"
                 class="d-flex align-items-center info-button"
                 v-b-tooltip.hover
                 title="View more details"
                 size="sm"
-                :to="'containers/' + id"
+                :to="'ourProducts/' + id"
               >
                 <b-icon-info-square-fill
                   role="img"
@@ -106,12 +106,7 @@
                 </span>
                 <hr class="my-1" />
               </div>
-              <!-- <li class="d-flex justify-content-between">
 
-              <li class="d-flex justify-content-between m-0">
-
-                <strong></strong>
-              </li> -->
               <hr class="mt-1" />
             </div>
             <div>

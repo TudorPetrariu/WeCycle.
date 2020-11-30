@@ -1,36 +1,35 @@
 <template>
-  <div>
-    <div>
-      <div
-        class="select-all-sizes d-flex justify-content-center align-items-center"
-      >
-        <b-form-select v-model="selected" class="mb-3">
-          <template>
-            <b-form-select-option class="text-white" :value="null" disabled
-              >-- Filter by size --</b-form-select-option
-            >
-          </template>
-          <b-form-select-option value="All Products"
-            >All Products</b-form-select-option
+  <b-container>
+    <div
+      class="select-all-sizes d-flex justify-content-center align-items-center"
+    >
+      <b-form-select v-model="selected">
+        <template>
+          <b-form-select-option class="text-white" :value="null" disabled
+            >-- Filter by size --</b-form-select-option
           >
-          <b-form-select-option
-            v-for="config in options"
-            :value="config"
-            :key="config"
-            >{{ config }} L</b-form-select-option
-          >
-        </b-form-select>
-      </div>
+        </template>
+        <b-form-select-option value="All Products"
+          >All Products</b-form-select-option
+        >
+        <b-form-select-option
+          v-for="config in options"
+          :value="config"
+          :key="config"
+          >{{ config }} L</b-form-select-option
+        >
+      </b-form-select>
     </div>
-    <main>
+    <div class="singleProduct">
       <SingleContainer
         v-for="product in filteredProducts"
         :key="product._id"
         :id="product._id"
         :productDetails="product"
+        c
       />
-    </main>
-  </div>
+    </div>
+  </b-container>
 </template>
 
 <script>

@@ -11,10 +11,7 @@
           <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/cart">Cart</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/ourProducts">Containers</nuxt-link>
+          <nuxt-link to="/ourProducts">Products</nuxt-link>
         </li>
       </ul>
     </nav>
