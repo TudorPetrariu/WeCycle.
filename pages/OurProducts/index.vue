@@ -74,6 +74,9 @@ export default {
   mounted() {
     this.populateDropdownSelect()
   },
+  async created() {
+    this.$store.dispatch('containers/fetchRecycleProducts')
+  },
   head() {
     return {
       title: 'Explore our products',

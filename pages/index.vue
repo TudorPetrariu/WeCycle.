@@ -1,6 +1,6 @@
 <template>
   <section class="landing-page">
-    <h1>Home</h1>
+    <b-button :to="'/ourProducts'">Explore out products</b-button>
   </section>
 </template>
 
@@ -11,5 +11,3 @@ export default {
   }
 }
 </script>
-
-<style></style>

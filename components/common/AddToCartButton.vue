@@ -15,7 +15,6 @@
       >
         <small> -</small>
       </b-button>
-      <!-- <span class="mx-2">{{ quantity }} </span> -->
       <b-button
         class="addition-button d-flex justify-content-center align-items-center"
         @click="getCartCurrentPrice('addition')"
@@ -23,6 +22,13 @@
         <small> + </small>
       </b-button>
     </div>
+    <b-button
+      v-if="$route.name !== 'OurProducts'"
+      :to="'/ourProducts'"
+      class="go-back-button"
+    >
+      <b-icon-arrow-return-left />
+    </b-button>
   </div>
 </template>
 

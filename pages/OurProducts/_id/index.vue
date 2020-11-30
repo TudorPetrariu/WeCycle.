@@ -71,21 +71,7 @@
             {{ currentProduct.description['en-gb'] }}
           </span>
         </div>
-        <hr class="m" />
-
-        <!-- <b-list-group class="details-card-text">
-
-          </li>
-          <li class="d-flex justify-content-between">
-            Rent
-            <strong class="text-secondary"></strong>
-          </li>
-          <li class="d-flex justify-content-between">
-            Price
-
-          </li>
-        </ul>
-        <hr /> -->
+        <hr />
 
         <AddToCartButton
           :item="currentProduct"
