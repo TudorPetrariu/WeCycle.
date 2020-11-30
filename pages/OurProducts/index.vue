@@ -20,7 +20,7 @@
         >
       </b-form-select>
     </div>
-    <div class="singleProduct">
+    <div class="singleProduct justify-content-center align-items-center">
       <SingleContainer
         v-for="product in filteredProducts"
         :key="product._id"

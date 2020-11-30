@@ -43,19 +43,31 @@
         </h1>
         <div class="d-flex flex-column details-card-text">
           <span class="d-flex justify-content-between align-items-center">
-            Dapibus ac facilisis in
-            <b-badge variant="primary text-white px-4 py-2">2</b-badge>
+            Placement
+            <b-badge variant="primary text-white px-4 py-2"
+              ><strong class="text-secondary">{{
+                filterSelectedSize[0].unit_price_placement | replaceNull
+              }}</strong></b-badge
+            >
           </span>
           <hr class="mt-1" />
           <span class="d-flex justify-content-between align-items-center">
-            Morbi leo risus
-            <b-badge variant="primary text-white px-4 py-2">1</b-badge>
+            Rent
+            <b-badge variant="primary text-white px-4 py-2">{{
+              filterSelectedSize[0].unit_price_rent | replaceNull
+            }}</b-badge>
+          </span>
+          <hr class="mt-1" />
+          <span class="d-flex justify-content-between align-items-center">
+            Price
+            <b-badge variant="primary text-white px-4 py-2">
+              ${{ filterSelectedSize[0].unit_price_pickup }}</b-badge
+            >
           </span>
           <hr class="mt-1" />
           <span
             class="d-flex justify-content-between align-items-start card-description"
           >
-            <!-- <b-badge variant="secondary text-white px-3 py-1 ">Usage</b-badge> -->
             {{ currentProduct.description['en-gb'] }}
           </span>
         </div>
@@ -63,29 +75,14 @@
 
         <!-- <b-list-group class="details-card-text">
 
-        </b-list-group> -->
-        <!-- <ul class="details-card-text">
-          <li>
-
-          </li>
-
-          <li class="d-flex justify-content-between">
-            <span> Placement </span>
-            <strong class="text-secondary">{{
-              filterSelectedSize[0].unit_price_placement | replaceNull
-            }}</strong>
           </li>
           <li class="d-flex justify-content-between">
             Rent
-            <strong class="text-secondary">{{
-              filterSelectedSize[0].unit_price_rent | replaceNull
-            }}</strong>
+            <strong class="text-secondary"></strong>
           </li>
           <li class="d-flex justify-content-between">
             Price
-            <strong class="text-secondary"
-              >${{ filterSelectedSize[0].unit_price_pickup }}</strong
-            >
+
           </li>
         </ul>
         <hr /> -->

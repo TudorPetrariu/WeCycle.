@@ -21,7 +21,7 @@ body {
   grid-template-columns: repeat(1fr);
 }
 .card {
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 0.5em;
   box-shadow: 0 0.6px 4px rgba(0, 0, 0, 0.16), 0 1.1px 9.6px rgba(0, 0, 0, 0.13),
     0 1.6px 18.2px rgba(0, 0, 0, 0.11), 0 2.3px 32.4px rgba(0, 0, 0, 0.092),
@@ -37,6 +37,14 @@ body {
       background: transparent;
     }
   }
+  .card-img {
+    min-width: 15rem;
+    max-width: 15rem;
+    height: 15rem;
+  }
+  .card-body {
+    width: 100%;
+  }
 }
 .card-list-select div select {
   color: #f3f3f3;
@@ -49,7 +57,6 @@ body {
   -webkit-appearance: button;
 }
 .btn {
-  // border-radius: 3px;
   background: linear-gradient(to right, #396d6e 0%, #0b8d94 100%);
   &:hover {
     background: linear-gradient(to right, #0b8d94 0%, #396d6e 100%);
