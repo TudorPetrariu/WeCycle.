@@ -13,6 +13,12 @@
 
 @mixin sizeM {
   @media screen and (min-width: 768px) {
+    .add-multiple-to-cart-btn {
+      .add-to-cart-button {
+        min-width: 6rem;
+        max-width: 6rem;
+      }
+    }
     .details-card-item {
       width: auto;
       max-width: 95vw;
@@ -27,14 +33,18 @@
         min-width: 30vw;
         margin-top: 3rem;
       }
+      .details-card-text {
+        .badge {
+          // padding: 5rem;
+        }
+      }
     }
   }
 }
+
 @mixin sizeL {
   @media screen and (min-width: 992px) {
     .details-card-item {
-      // min-width: inherit;
-
       .details-card-img {
         min-width: 30rem;
         max-width: 30rem;
@@ -42,4 +52,6 @@
       }
     }
   }
+}
+@media screen and (max-width: 768px) {
 }

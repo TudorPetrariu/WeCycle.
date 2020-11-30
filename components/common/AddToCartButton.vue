@@ -1,26 +1,27 @@
 <template>
   <div
-    class="d-flex justify-content-between align-items-center add-multiple-to-cart-btn"
+    class="d-flex justify-content-between align-items-center add-to-cart-btns"
   >
-    <b-button
-      class="px-3 py-2 add-to-cart-button"
-      size="sm"
-      @click="addItemToCart"
-    >
+    <b-button class="add-to-cart-button" size="sm" @click="addItemToCart">
       Add {{ quantity === 0 ? '1' : quantity }} for ${{
         cartItemsPrice === 0 ? this.price : cartItemsPrice
       }}
     </b-button>
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center add-quantity-to-cart">
       <b-button
-        class="substraction-button px-3"
+        class="substraction-button d-flex justify-content-center align-items-center mr-1"
         :disabled="quantity === 1"
         @click="getCartCurrentPrice('substraction')"
       >
-        -
+        <small> -</small>
       </b-button>
-      <span class="mx-2">{{ quantity }} </span>
-      <b-button @click="getCartCurrentPrice('addition')"> + </b-button>
+      <!-- <span class="mx-2">{{ quantity }} </span> -->
+      <b-button
+        class="addition-button d-flex justify-content-center align-items-center"
+        @click="getCartCurrentPrice('addition')"
+      >
+        <small> + </small>
+      </b-button>
     </div>
   </div>
 </template>

@@ -1,25 +1,25 @@
 <template>
   <div>
-    <p>Products List</p>
     <div>
-      <b-form-select v-model="selected" class="mb-3">
-        <template>
-          <b-form-select-option :value="null" disabled
-            >-- Filter by size --</b-form-select-option
+      <div
+        class="select-all-sizes d-flex justify-content-center align-items-center"
+      >
+        <b-form-select v-model="selected" class="mb-3">
+          <template>
+            <b-form-select-option class="text-white" :value="null" disabled
+              >-- Filter by size --</b-form-select-option
+            >
+          </template>
+          <b-form-select-option value="All Products"
+            >All Products</b-form-select-option
           >
-        </template>
-        <b-form-select-option value="All Products"
-          >All Products</b-form-select-option
-        >
-        <b-form-select-option
-          v-for="config in options"
-          :value="config"
-          :key="config"
-          >{{ config }} L</b-form-select-option
-        >
-      </b-form-select>
-      <div class="mt-4">
-        Selected: <strong>{{ selected }}</strong>
+          <b-form-select-option
+            v-for="config in options"
+            :value="config"
+            :key="config"
+            >{{ config }} L</b-form-select-option
+          >
+        </b-form-select>
       </div>
     </div>
     <main>

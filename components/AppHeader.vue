@@ -1,23 +1,37 @@
 <template>
   <div>
-    <b-button v-b-toggle.sidebar-right>Menu</b-button>
-    <b-sidebar id="sidebar-right" title="Menu" right shadow>
-      <ul>
+    <nav>
+      <div class="nav-menu" @click="toggleMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" @click="toggleMenu">
         <li>
           <nuxt-link to="/">Home</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/about">About</nuxt-link>
+          <nuxt-link to="/cart">Cart</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/containers">Containers</nuxt-link>
+          <nuxt-link to="/ourProducts">Containers</nuxt-link>
         </li>
       </ul>
-    </b-sidebar>
+    </nav>
   </div>
 </template>
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  data() {
+    return {}
+  },
+  methods: {
+    toggleMenu() {
+      const navLinks = this.$el.querySelector('.nav-links')
+      navLinks.classList.toggle('open')
+      console.log(navLinks)
+    }
+  }
 }
 </script>

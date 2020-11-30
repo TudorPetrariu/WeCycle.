@@ -1,8 +1,10 @@
 $theme-colors: (
-  primary: #1d9797,
-  secondary: #ff7b00
+  primary: #3f8f8f,
+  secondary: #d5bd85,
+  info: #1d1a17a9
 );
 
 $config: (
-  shadows: 0 4px 4px 0 rgba(105, 103, 103, 0.5)
+  shadows: 0 4px 4px 0 rgba(105, 103, 103, 0.5),
+  main-color: linear-gradient(to right, #0b8d94 0%, #396d6e 100%)
 );

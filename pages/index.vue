@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <div>
-      <h1>Home</h1>
-    </div>
-  </div>
+  <section class="landing-page">
+    <h1>Home</h1>
+  </section>
 </template>
 
 <script>
