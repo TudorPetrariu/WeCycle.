@@ -1,6 +1,9 @@
 <template>
   <section class="landing-page">
-    <b-button :to="'/ourProducts'">Explore out products</b-button>
+    <h1>WeCicle.</h1>
+    <b-button class="p-5 text-white" :to="'/ourProducts'"
+      >Explore out products</b-button
+    >
   </section>
 </template>
 

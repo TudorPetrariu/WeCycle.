@@ -24,8 +24,8 @@
 @mixin sizeM {
   @media screen and (min-width: 768px) {
     .singleProduct {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 3rem;
     }
     .card {
       .card-img {
@@ -59,6 +59,10 @@
 
 @mixin sizeL {
   @media screen and (min-width: 992px) {
+    .singleProduct {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3rem;
+    }
     .details-card-item {
       .details-card-img {
         min-width: 30rem;

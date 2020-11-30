@@ -44,8 +44,8 @@
         <div class="d-flex flex-column details-card-text">
           <span class="d-flex justify-content-between align-items-center">
             Placement
-            <b-badge variant="primary text-white px-4 py-2"
-              ><strong class="text-secondary">{{
+            <b-badge variant="primary text-white px-4 py-2 w-25"
+              ><strong>{{
                 filterSelectedSize[0].unit_price_placement | replaceNull
               }}</strong></b-badge
             >
@@ -53,14 +53,14 @@
           <hr class="mt-1" />
           <span class="d-flex justify-content-between align-items-center">
             Rent
-            <b-badge variant="primary text-white px-4 py-2">{{
+            <b-badge variant="primary text-white px-4 py-2 w-25">{{
               filterSelectedSize[0].unit_price_rent | replaceNull
             }}</b-badge>
           </span>
           <hr class="mt-1" />
           <span class="d-flex justify-content-between align-items-center">
             Price
-            <b-badge variant="primary text-white px-4 py-2">
+            <b-badge variant="primary text-white px-4 py-2 w-25">
               ${{ filterSelectedSize[0].unit_price_pickup }}</b-badge
             >
           </span>
