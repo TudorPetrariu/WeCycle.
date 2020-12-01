@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <div
-      class="select-all-sizes d-flex justify-content-center align-items-center"
+      class="select-all-sizes d-flex justify-content-center align-items-center mb-5"
     >
       <b-form-select v-model="selected">
         <template>
@@ -20,7 +20,9 @@
         >
       </b-form-select>
     </div>
-    <div class="singleProduct justify-content-center align-items-center">
+    <div
+      class="single-product-card-list justify-content-center align-items-center"
+    >
       <SingleContainer
         v-for="product in filteredProducts"
         :key="product._id"

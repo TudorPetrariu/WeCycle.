@@ -2,18 +2,22 @@
   <div
     class="d-flex justify-content-between align-items-center add-to-cart-btns"
   >
-    <b-button class="add-to-cart-button" size="sm" @click="addItemToCart">
+    <b-button
+      class="add-to-cart-button d-flex justify-content-center align-items-center"
+      size="sm"
+      @click="addItemToCart"
+    >
       Add {{ quantity === 0 ? '1' : quantity }} for ${{
         cartItemsPrice === 0 ? this.price : cartItemsPrice
       }}
     </b-button>
-    <div class="d-flex align-items-center add-quantity-to-cart">
+    <div class="d-flex align-items-center add-quantity-to-cart-btns">
       <b-button
         class="substraction-button d-flex justify-content-center align-items-center mr-1"
         :disabled="quantity === 1"
         @click="getCartCurrentPrice('substraction')"
       >
-        <small> -</small>
+        <small> - </small>
       </b-button>
       <b-button
         class="addition-button d-flex justify-content-center align-items-center"
@@ -25,9 +29,9 @@
     <b-button
       v-if="$route.name !== 'OurProducts'"
       :to="'/ourProducts'"
-      class="go-back-button"
+      class="go-back-button d-flex justify-content-center align-items-center"
     >
-      <b-icon-arrow-return-left />
+      <b-icon-arrow-return-left font-scale="1.8" />
     </b-button>
   </div>
 </template>

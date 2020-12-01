@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'navbar';
-@import '~bootstrap/scss/bootstrap.scss';
 
 *,
 *::before,
@@ -16,6 +15,14 @@ body {
   background: linear-gradient(to right, #eef0f1, #d9dee0);
   font-family: 'Roboto', sans-serif;
 }
+.single-product-card-list {
+  display: grid;
+  // grid-row-gap: 2rem;
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
 
 .card {
   border-radius: 20px;
@@ -28,10 +35,12 @@ body {
     box-shadow: 0 4px 10px 0 #396d6e;
   }
   .info-button {
+    border: none;
     padding: 0;
-    background: transparent;
     &:hover {
       background: transparent;
+      color: map_get($theme-colors, 'primary');
+      transition: 0.3s all ease-in-out;
     }
   }
   .card-img {
@@ -46,11 +55,33 @@ body {
 
 .btn {
   background: linear-gradient(to right, #396d6e 0%, #0b8d94 100%);
+  box-shadow: map_get($config, 'shadows');
+  transition: 0.3s all ease-in-out;
+
   &:hover {
     background: linear-gradient(to right, #0b8d94 0%, #396d6e 100%);
     color: #fefefe;
+    transition: 0.3s all ease-in-out;
   }
-  box-shadow: map_get($config, 'shadows');
+}
+
+.go-back-button {
+  min-height: 2.8rem;
+  max-height: 2.8rem;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: map_get($theme-colors, 'primary');
+}
+.landing-page button .btn {
+  padding: 10rem;
+  color: #ccc;
+  width: 240px;
+  height: 60px;
+  border: 1px solid map_get($theme-colors, 'primary');
+  font-size: 2.5rem;
+  transition: 0.6s;
+  border-radius: 4px;
 }
 .add-to-cart-btns {
   .add-to-cart-button {
@@ -58,17 +89,18 @@ body {
     color: #fefefe;
     text-transform: uppercase;
     border: 1px solid map_get($theme-colors, 'primary');
-    min-width: 9rem;
-    max-width: 9rem;
+    min-width: 6rem;
+    max-width: 6rem;
     min-height: 2.8rem;
     max-height: 2.8rem;
+    font: 0.8em sans-serif;
     &:hover {
       background: linear-gradient(to right, #396d6e 0%, #0b8d94 100%);
       color: #fefefe;
-      transition: 0.4s ease-out;
+      transition: 0.3s all ease-in-out;
     }
   }
-  .add-quantity-to-cart {
+  .add-quantity-to-cart-btns {
     .btn {
       font-size: 2rem;
       background: #fefefe;
@@ -81,14 +113,14 @@ body {
       &:hover {
         background: linear-gradient(to right, #0b8d94 0%, #396d6e 100%);
         color: #fefefe;
-        transition: 0.4s ease-out;
+        transition: 0.3s all ease-in-out;
       }
     }
   }
 }
 .details-card-item {
-  width: 100vw;
-  max-width: 98w;
+  // width: 100vw;
+  // max-width: 98w;
   margin-top: 4rem;
   padding: 2rem;
   background-color: #fefefe;
@@ -158,27 +190,7 @@ body {
   box-shadow: map_get($config, 'shadows');
   -webkit-appearance: button;
 }
-.go-back-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 10px;
-  min-width: 2.5rem;
-  max-width: 2.5rem;
-  min-height: 2.8rem;
-  max-height: 2.8rem;
-  color: white;
-}
-.landing-page button .btn {
-  padding: 10rem;
-  color: #ccc;
-  width: 240px;
-  height: 60px;
-  border: 1px solid #333803;
-  font-size: 2.5rem;
-  transition: 0.6s;
-  border-radius: 4px;
-}
+
 @import 'breakpoints';
 @include sizeS;
 @include sizeM;

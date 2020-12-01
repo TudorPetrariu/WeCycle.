@@ -3,8 +3,7 @@
     <b-card
       @click="seeCurrentProduct"
       no-body
-      style="max-height: 37rem; min-height: 37rem"
-      class="my-5 d-flex align-items-center justify-content-center"
+      class="d-flex align-items-center justify-content-center"
     >
       <b-card-img
         class="p-3 rounded-circle"
@@ -27,12 +26,8 @@
             size="sm"
             :to="'ourProducts/' + id"
           >
-            <b-icon-info-square-fill
-              role="img"
-              font-scale="2"
-              variant="primary"
-              scale="1"
-              >Details</b-icon-info-square-fill
+            <b-icon-info-square font-scale="2" scale="1"
+              >Details</b-icon-info-square
             >
           </b-button>
         </div>
@@ -73,7 +68,7 @@
           </div>
         </b-card-text>
         <div>
-          <hr class="my-1" />
+          <hr class="mt-1 mb-1" />
 
           <div class="d-flex flex-column details-card-text">
             <span class="d-flex justify-content-between align-items-center">
@@ -82,7 +77,7 @@
                 filterSelectedSize[0].unit_price_rent | replaceNull
               }}</b-badge>
             </span>
-            <hr class="my-1" />
+            <hr class="mt-1 mb-1" />
             <span class="d-flex justify-content-between align-items-center">
               Placement
               <b-badge variant="primary text-white px-4 py-2 w-25">
@@ -91,7 +86,7 @@
                 }}</b-badge
               >
             </span>
-            <hr class="my-1" />
+            <hr class="mt-1 mb-1" />
             <span class="d-flex justify-content-between align-items-center">
               Rent
               <b-badge variant="primary text-white px-3 py-2 w-25">{{
