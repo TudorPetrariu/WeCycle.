@@ -11,12 +11,11 @@
       </div>
       <div class="details-card-info">
         <div
-          class="details-card-date d-flex align-items-center justify-content-between"
+          class="d-flex align-items-center justify-content-between card-list-select"
         >
           <h3 class="text-secondary">{{ currentProduct.name['en-gb'] }}</h3>
           <div class="d-flex justify-content-center align-items-center">
             <b-form-select
-              class="card-list-select"
               :disabled="currentProduct.sizes.length === 1"
               v-model="selectedSize"
             >
