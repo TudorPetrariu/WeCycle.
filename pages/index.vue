@@ -10,7 +10,7 @@
 <script>
 export default {
   async created() {
-    this.$store.dispatch('containers/fetchRecycleProducts')
+    this.$store.dispatch('products/fetchRecycleProducts')
   }
 }
 </script>

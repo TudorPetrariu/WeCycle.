@@ -43,16 +43,7 @@ body {
     width: 100%;
   }
 }
-.card-list-select div select {
-  color: #f3f3f3;
-  background: map_get($theme-colors, 'secondary');
-  padding: 0.5rem;
-  height: 2rem;
-  border: none;
-  font-size: 0.9rem;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
-  -webkit-appearance: button;
-}
+
 .btn {
   background: linear-gradient(to right, #396d6e 0%, #0b8d94 100%);
   &:hover {
@@ -155,6 +146,16 @@ body {
   border: none;
   font-size: 0.9rem;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  -webkit-appearance: button;
+}
+.card-list-select select {
+  color: #f3f3f3;
+  background: map_get($theme-colors, 'secondary');
+  padding: 0.5rem;
+  height: 2rem;
+  border: none;
+  font-size: 0.9rem;
+  box-shadow: map_get($config, 'shadows');
   -webkit-appearance: button;
 }
 .go-back-button {

@@ -11,11 +11,12 @@
       </div>
       <div class="details-card-info">
         <div
-          class="details-card-date d-flex align-items-center justify-content-between card-list-select"
+          class="details-card-date d-flex align-items-center justify-content-between"
         >
           <h3 class="text-secondary">{{ currentProduct.name['en-gb'] }}</h3>
           <div class="d-flex justify-content-center align-items-center">
             <b-form-select
+              class="card-list-select"
               :disabled="currentProduct.sizes.length === 1"
               v-model="selectedSize"
             >
@@ -97,7 +98,7 @@ export default {
   },
   computed: {
     currentProduct() {
-      return this.$store.getters['containers/getCurrentProduct']
+      return this.$store.getters['products/getCurrentProduct']
     },
     filterSelectedSize() {
       if (this.selectedSize === 'Size') {

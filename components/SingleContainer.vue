@@ -37,10 +37,12 @@
           </b-button>
         </div>
         <b-card-text class="mt-2">
-          <div class="d-flex justify-content-between align-items-center">
+          <div
+            class="d-flex justify-content-between align-items-center card-list-select"
+          >
             <b-form-select
               :disabled="productDetails.sizes.length === 1"
-              class="w-50"
+              class="w-25"
               v-model="selectedSize"
             >
               <template #first>
@@ -132,7 +134,7 @@ export default {
   },
   methods: {
     seeCurrentProduct() {
-      this.$store.commit('containers/saveProductDetails', this.productDetails)
+      this.$store.commit('products/saveProductDetails', this.productDetails)
     }
   },
   computed: {

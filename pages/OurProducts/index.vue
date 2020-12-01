@@ -46,7 +46,7 @@ export default {
   },
   computed: {
     getAllProducts() {
-      return this.$store.getters['containers/getProductsList']
+      return this.$store.getters['products/getProductsList']
     },
     filteredProducts() {
       if (this.selected === 'All Products') {
@@ -75,7 +75,7 @@ export default {
     this.populateDropdownSelect()
   },
   async created() {
-    this.$store.dispatch('containers/fetchRecycleProducts')
+    this.$store.dispatch('products/fetchRecycleProducts')
   },
   head() {
     return {

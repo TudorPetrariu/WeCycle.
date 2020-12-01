@@ -28,7 +28,6 @@ const actions = {
     try {
       const response = await fetch(`${url}`)
       const data = await response.json()
-      commit('setSearchedBattleship', data.results)
       commit('setProductsList', data)
     } catch (error) {
       console.log(error)
