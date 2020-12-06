@@ -35,7 +35,7 @@
           </div>
         </div>
         <h1
-          class="details-card-title text-info d-flex justify-content-start align-items-center"
+          class="details-card-title text-secondary d-flex justify-content-start align-items-center"
         >
           <img :src="euroSVG" alt="euro-symbol" />{{
             filterSelectedSize[0].unit_price_pickup

@@ -31,7 +31,7 @@
       :to="'/ourProducts'"
       class="go-back-button d-flex justify-content-center align-items-center"
     >
-      <b-icon-arrow-return-left font-scale="1.8" />
+      <BIconArrowReturnLeft font-scale="1.8" />
     </b-button>
   </div>
 </template>

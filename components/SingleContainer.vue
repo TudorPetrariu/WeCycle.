@@ -3,7 +3,8 @@
     <b-card
       @click="seeCurrentProduct"
       no-body
-      class="d-flex align-items-center justify-content-center"
+      style="min-width: 22rem"
+      class="d-flex align-items-center justify-content-center mb-4"
     >
       <b-card-img
         class=""
@@ -24,9 +25,7 @@
             size="sm"
             :to="'ourProducts/' + id"
           >
-            <b-icon-info-square font-scale="2" scale="1"
-              >Details</b-icon-info-square
-            >
+            <BIconInfoSquare font-scale="2" scale="1">Details</BIconInfoSquare>
           </b-button>
         </div>
         <b-card-text class="mt-2">
@@ -51,8 +50,9 @@
                 >{{ productSize.size }} L</b-form-select-option
               >
             </b-form-select>
-            <b-icon-chevron-bar></b-icon-chevron-bar>
-            <h1 class="d-flex justify-content-center align-items-center">
+            <h1
+              class="d-flex text-secondary justify-content-center align-items-center"
+            >
               <img
                 class="euro-symbol"
                 style="height: 1rem; box-shadow: none; border:none'"
@@ -69,7 +69,7 @@
           <div class="d-flex flex-column details-card-text">
             <span class="d-flex justify-content-between align-items-center">
               Rent
-              <b-badge variant="  px-4 py-2 w-25">{{
+              <b-badge variant="px-4 py-2 w-25">{{
                 filterSelectedSize[0].unit_price_rent | replaceNull
               }}</b-badge>
             </span>
@@ -85,7 +85,7 @@
             <hr class="mt-1 mb-1" />
             <span class="d-flex justify-content-between align-items-center">
               Rent
-              <b-badge variant=" px-3 py-2 w-25">{{
+              <b-badge variant="  px-3 py-2 w-25">{{
                 filterSelectedSize[0].unit_price_pickup | replaceNull
               }}</b-badge>
             </span>

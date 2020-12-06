@@ -17,7 +17,6 @@ body {
 }
 .single-product-card-list {
   display: grid;
-  // grid-row-gap: 2rem;
   h4 {
     font-size: 1.3rem;
     font-weight: 600;
@@ -33,7 +32,6 @@ body {
 
   img {
     box-shadow: 0 4px 10px 0 #396d6e;
-    border: 2px solid teal;
   }
   .info-button {
     border: none;
@@ -51,6 +49,11 @@ body {
   }
   .card-body {
     width: 100%;
+    .details-card-text {
+      .badge {
+        color: white;
+      }
+    }
   }
 }
 
@@ -118,6 +121,9 @@ body {
     }
   }
 }
+#card_details_page {
+  height: 100vh;
+}
 .details-card-item {
   // width: 100vw;
   // max-width: 98w;
@@ -169,7 +175,7 @@ body {
   }
 }
 .select-all-sizes select {
-  margin-top: 5rem;
+  // margin-top: 2.5rem;
   width: 70%;
   color: #f3f3f3;
   background: map_get($theme-colors, 'primary');

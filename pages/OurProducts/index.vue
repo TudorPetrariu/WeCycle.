@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <div
-      class="select-all-sizes d-flex justify-content-center align-items-center mb-5"
+      class="select-all-sizes d-flex justify-content-center align-items-center mt-5 mb-4"
     >
       <b-form-select v-model="selected">
         <template>
