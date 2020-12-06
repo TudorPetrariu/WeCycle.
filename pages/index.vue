@@ -1,10 +1,8 @@
 <template>
-  <section class="landing-page">
-    <h1>WeCicle.</h1>
-    <b-button class="p-5 text-white" :to="'/ourProducts'"
-      >Explore out products</b-button
-    >
-  </section>
+  <div class="landing-page d-flex justify-content-center align-items-center">
+    <h1>WeCycle.</h1>
+    <b-button class="" :to="'/ourProducts'">Explore our products</b-button>
+  </div>
 </template>
 
 <script>

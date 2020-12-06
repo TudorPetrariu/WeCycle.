@@ -6,7 +6,7 @@
       class="d-flex align-items-center justify-content-center"
     >
       <b-card-img
-        class="p-3 rounded-circle"
+        class=""
         :src="filterSelectedSize[0].image"
         alt="container-Image"
       ></b-card-img>
@@ -14,9 +14,7 @@
       <b-card-body v-if="productDetails.sizes">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <h4 class="text-secondary">
-              {{ productDetails.name['en-gb'] }} Container
-            </h4>
+            <h4>{{ productDetails.name['en-gb'] }} Container</h4>
           </div>
           <b-button
             v-if="$route.name !== 'ourProducts'"
@@ -53,13 +51,11 @@
                 >{{ productSize.size }} L</b-form-select-option
               >
             </b-form-select>
-
-            <h1
-              class="d-flex text-info justify-content-center align-items-center"
-            >
+            <b-icon-chevron-bar></b-icon-chevron-bar>
+            <h1 class="d-flex justify-content-center align-items-center">
               <img
                 class="euro-symbol"
-                style="height: 0.6rem; box-shadow: none"
+                style="height: 1rem; box-shadow: none; border:none'"
                 :src="euroSVG"
                 alt="euro-symbol"
               />
@@ -73,14 +69,14 @@
           <div class="d-flex flex-column details-card-text">
             <span class="d-flex justify-content-between align-items-center">
               Rent
-              <b-badge variant="primary text-white px-4 py-2 w-25">{{
+              <b-badge variant="  px-4 py-2 w-25">{{
                 filterSelectedSize[0].unit_price_rent | replaceNull
               }}</b-badge>
             </span>
             <hr class="mt-1 mb-1" />
             <span class="d-flex justify-content-between align-items-center">
               Placement
-              <b-badge variant="primary text-white px-4 py-2 w-25">
+              <b-badge variant=" px-4 py-2 w-25">
                 {{
                   filterSelectedSize[0].unit_price_placement | replaceNull
                 }}</b-badge
@@ -89,7 +85,7 @@
             <hr class="mt-1 mb-1" />
             <span class="d-flex justify-content-between align-items-center">
               Rent
-              <b-badge variant="primary text-white px-3 py-2 w-25">{{
+              <b-badge variant=" px-3 py-2 w-25">{{
                 filterSelectedSize[0].unit_price_pickup | replaceNull
               }}</b-badge>
             </span>

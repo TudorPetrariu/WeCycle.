@@ -13,7 +13,7 @@
         <div
           class="d-flex align-items-center justify-content-between card-list-select"
         >
-          <h3 class="text-secondary">{{ currentProduct.name['en-gb'] }}</h3>
+          <h4>{{ currentProduct.name['en-gb'] }}</h4>
           <div class="d-flex justify-content-center align-items-center">
             <b-form-select
               :disabled="currentProduct.sizes.length === 1"
