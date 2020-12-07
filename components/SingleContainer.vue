@@ -76,7 +76,7 @@
             <hr class="mt-1 mb-1" />
             <span class="d-flex justify-content-between align-items-center">
               Placement
-              <b-badge variant=" px-4 py-2 w-25">
+              <b-badge variant="px-4 py-2 w-25">
                 {{
                   filterSelectedSize[0].unit_price_placement | replaceNull
                 }}</b-badge

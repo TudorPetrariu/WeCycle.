@@ -13,6 +13,8 @@ Vue.use(BootstrapVue)
 Vue.component('BIcon', BIcon)
 Vue.component('BIconArrowReturnLeft', BIconArrowReturnLeft)
 Vue.component('BIconInfoSquare', BIconInfoSquare)
+// Vue.component('BIconArrowClockwise', BIconArrowClockwise)
+
 Vue.use(Vuex)
 
 Vue.filter('replaceNull', (value) => {
